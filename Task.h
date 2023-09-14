@@ -2,17 +2,21 @@
 #define TASK_H
 
 #include <string>
+#include <date/date.h>  // include the date library
 
 class Task {
 private:
     std::string Title;
     std::string Description;
-    std::string DueDate;
+    date::year_month_day DueDate;  // Use the date library's year_month_day type
     bool isComplete;
 
 public:
     Task();  // Default constructor
-    Task(const std::string& title, const std::string& description, const std::string& dueDate, bool isComplete);  // Parameterized constructor
+    Task(const std::string& title, 
+         const std::string& description, 
+         const date::year_month_day& dueDate,  // Accept year_month_day directly
+         bool isComplete);
 
     const std::string& getTitle() const;
     void setTitle(const std::string& title);
@@ -20,8 +24,8 @@ public:
     const std::string& getDescription() const;
     void setDescription(const std::string& description);
 
-    const std::string& getDueDate() const;
-    void setDueDate(const std::string& dueDate);
+    date::year_month_day getDueDate() const;
+    void setDueDate(const date::year_month_day& dueDate);  // Accept year_month_day directly
 
     bool getIsComplete() const;
     void setIsComplete(bool newIsComplete);
