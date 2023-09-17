@@ -19,35 +19,34 @@ Task::Task(const std::string& title, const std::string& description, const std::
     this->isComplete = isComplete;
 }
 
-
 const std::string& Task::getTitle() const {
     return Title;
 }
 
-void Task::setTitle(const std::string& title){
+void Task::setTitle(const std::string& title) {
     Title = title;
 }
 
-const std::string& Task::getDescription() const{
+const std::string& Task::getDescription() const {
     return Description;
 }
 
-void Task::setDescription(const std::string& description){
+void Task::setDescription(const std::string& description) {
     Description = description;
 }
 
-const std::string& Task::getDueDate() const{
+const std::string& Task::getDueDate() const {
     return DueDate;
 }
 
-void Task::setDueDate(const std::string& dueDate){
+void Task::setDueDate(const std::string& dueDate) {
     DueDate = dueDate;
 }
 
-bool Task::getIsComplete() const{
+bool Task::getIsComplete() const {
     return isComplete;
 }
 
-void Task::setIsComplete(bool newIsComplete){
+void Task::setIsComplete(bool newIsComplete) {
     isComplete = newIsComplete;
 }
