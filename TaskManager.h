@@ -14,9 +14,13 @@ public:
     TaskManager() {};
     void addTask();
     void addTask(const std::string& title, const std::string& description, const std::string& dueDate, bool isComplete);
-    void TaskManager::removeTask();
+    void removeTask();
     void viewTasks();
     void expandTasks();
+    void markComplete();
+    void updateFile();
+    void loadTasksFromFile(const std::string& filename);
+    void whiteSpaceTrim(std::string& key, std::string& value);
 
 };
 
