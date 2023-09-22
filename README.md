@@ -3,6 +3,7 @@ Basic Task Manager project I'm working on using CPP to gain more experience with
 
 TODO <br> 
 Categorise Tasks in a variety of ways (date added, isComplete state, due date)<br>
+(Maybe) Use polymorphism to introduce types of tasks - more reason to add categorisation functionality.
 
 Finish basic functionality implementation - **FINISHED** <br>
 Allow program to open, read, write and save to a text document for a more practical experience - **FINISHED** <br>
